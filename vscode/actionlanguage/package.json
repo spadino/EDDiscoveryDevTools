@@ -1,0 +1,25 @@
+{
+    "name": "actionlanguage",
+    "displayName": "ActionLanguage",
+    "description": "Action Language syntax highlighter",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.31.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "action",
+            "aliases": ["Action", "action"],
+            "extensions": [".act"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "action",
+            "scopeName": "action.act",
+            "path": "./syntaxes/action.tmLanguage.json"
+        }]
+    }
+}
